@@ -1,0 +1,5 @@
+1) Eine Java-Datei wird in eine Klassendatei kompiliert, die von der JVM interpretiert werden kann. Eine Jar-Datei ist eine Aggregation vieler Klassendateien mit Zusatzdaten wie Audio und Bildern. 
+
+2) 
+javac App.java 
+jar cfe app.jar App App.class

@@ -1,0 +1,18 @@
+1) Ein Versionskontrollsystem zeichnet die Änderungen auf, die an einer Datei oder an einer Menge von Dateien vorgenommen werden, so dass bestimmte Versionen jederzeit abgerufen werden können. Es bietet Änderungsverfolgung und Dokumentation ( commit message, tags).
+
+2) Drei verschiedene Zustände einer Datei innerhalb von Git:
+- Modified: Änderungen wurden an der Datei vorgenommen, aber noch nicht durchgeführt oder übergeben.
+- Staged: eine Datei wurde geändert und in ihrer aktuellen Version als Teil der nächsten Übergabe markiert.
+- Comitted: die aktuelle Version der Datei wurde in der lokalen Datenbank archiviert.
+
+3) Untracked Dateien sind Dateien im Arbeitsverzeichnis, die nie added, staged oder commited wurden. Tracked Dateien sind Teil des letzten commit oder sie werden neu geadded und gestaged. Änderungen an tracked Dateien werden von Git überwacht, aber Änderungen an untracked Dateien werden von Git nicht gesehen. 
+
+4)
+git clone URL folder_name
+cd folder_name
+echo '2' >~> a
+touch b
+cat a >~> b
+git add b
+git add a
+git commit 'this is the useful commit message'

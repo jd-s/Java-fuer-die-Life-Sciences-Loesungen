@@ -1,0 +1,12 @@
+- Ein Compiler übersetzt den Quellcode in den Zielcode. Während ein Interpreter die im Quellcode angegebenen Operationen direkt auf Eingaben des Benutzers ausführt.
+
+- Kompilierte Sprachen: c, c++, go, rost 
+Interpretierte Sprachen: perl, awk, MATLAB, R, javascript 
+
+Java und Python sind weder kompiliert noch interpretiert. Sie werden oft als byte-interpretierte Sprachen klassifiziert. Sie werden zunächst von einem Compiler in einen Byte-Code kompiliert. Dieser Bytecode wird dann zusammen mit den Benutzereingaben von einem Interpreter interpretiert. In dieser Phase wird der Interpreter oft als virtuelle Maschine bezeichnet, weil er das Verhalten einer realen Maschine nachahmt. 
+
+- public static void main(String... args) oder public void main(String[] args) 
+
+siehe https://docs.oracle.com/javase/specs/jls/se7/html/jls-12.html#jls-12.1.4
+
+
