@@ -1,2 +1,3 @@
-# Java-f-r-die-Life-Sciences---L-sungen
+# Java für die Life Sciences - Lösungen
+
 Lösungen zu den Übungsaufgaben
