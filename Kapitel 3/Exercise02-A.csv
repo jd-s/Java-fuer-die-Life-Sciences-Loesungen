@@ -1,0 +1,340 @@
+Gene1	Gene2	Annotation	Direction	Score
+16-5-5	PARD3	predicted	-	0.88
+16-5-5	PARD3B	predicted	-	0.88
+<ALPHA><BETA>CREB-1	AKT1	activated by	<-	1.00
+<ALPHA><BETA>CREB-1	ARNT	complex; input	-	1.00
+<ALPHA><BETA>CREB-1	ASPH	inhibited by	|-	1.00
+<ALPHA><BETA>CREB-1	CAMK2A	activated by	<-	1.00
+<ALPHA><BETA>CREB-1	CAMK2G	activated by	<-	1.00
+<ALPHA><BETA>CREB-1	CDK4	reaction	-	1.00
+<ALPHA><BETA>CREB-1	COPS5	complex; reaction	-	1.00
+<ALPHA><BETA>CREB-1	CREBBP	complex	-	1.00
+<ALPHA><BETA>CREB-1	FOS	complex; input	-	1.00
+<ALPHA><BETA>CREB-1	JUN	complex; input	-	1.00
+<ALPHA><BETA>CREB-1	KCNIP3	activate	->	1.00
+<ALPHA><BETA>CREB-1	MAP3K1	activated by	<-	1.00
+<ALPHA><BETA>CREB-1	MAPK11	activated by	<-	1.00
+<ALPHA><BETA>CREB-1	MAPK14	activated by	<-	1.00
+<ALPHA><BETA>CREB-1	MAPK3	reaction	-	1.00
+<ALPHA><BETA>CREB-1	NCOA3	complex; input	-	1.00
+<ALPHA><BETA>CREB-1	NFE2L2	complex; input	-	1.00
+<ALPHA><BETA>CREB-1	PIK3CA	activated by	<-	1.00
+<ALPHA><BETA>CREB-1	PIK3R1	activated by	<-	1.00
+<ALPHA><BETA>CREB-1	POLR2	reaction	-	1.00
+<ALPHA><BETA>CREB-1	PRKAR1A	activated by	<-	1.00
+<ALPHA><BETA>CREB-1	PRKAR1B	activated by	<-	1.00
+<ALPHA><BETA>CREB-1	PRKAR2B	activated by	<-	1.00
+<ALPHA><BETA>CREB-1	RPS6KA5	activated by	<-	1.00
+A1CF	APOBEC1	catalyzed by; complex; input	<-	1.00
+A1CF	EP300	expression regulated by	<-	1.00
+A2M	AMBP	predicted	-	0.73
+A2M	APOA1	inhibit	-|	1.00
+A2M	APP	predicted	-	0.73
+A2M	BMP1	inhibit	-|	1.00
+A2M	CDC42	catalyze	->	1.00
+A2M	KLKB1	complex; input	-	1.00
+A2M	MMP1	complex; input	-	1.00
+A2M	MMP13	complex; input	-	1.00
+A2M	MMP3	complex; input	-	1.00
+A2M	NFKB1	expression regulated by	<-	1.00
+A2M	PROC	PPrel: inhibition	-|	1.00
+A2M	RAC1	catalyze	->	1.00
+A2M	RAC2	catalyze	->	1.00
+A2M	RAC3	catalyze	->	1.00
+A2M	RELA	expression regulated by	<-	1.00
+A2M	RHOA	catalyze	->	1.00
+A2M	RHOB	catalyze	->	1.00
+A2M	RHOBTB1	catalyze	->	1.00
+A2M	RHOBTB2	catalyze	->	1.00
+A2M	RHOC	catalyze	->	1.00
+A2M	RHOD	catalyze	->	1.00
+A2M	RHOF	catalyze	->	1.00
+A2M	RHOG	catalyze	->	1.00
+A2M	RHOH	catalyze	->	1.00
+A2M	RHOJ	catalyze	->	1.00
+A2M	RHOQ	catalyze	->	1.00
+A2M	RHOT1	catalyze	->	1.00
+A2M	RHOT2	catalyze	->	1.00
+A2M	RHOU	catalyze	->	1.00
+A2M	RHOV	catalyze	->	1.00
+A2M	SERPING1	predicted	-	0.97
+A2M	STAT1	expression regulated by	<-	1.00
+A2M	STAT3	expression regulated by	<-	1.00
+A4GNT	MUC1	catalyze	->	1.00
+A4GNT	MUC12	catalyze	->	1.00
+A4GNT	MUC13	catalyze	->	1.00
+A4GNT	MUC15	catalyze	->	1.00
+A4GNT	MUC16	catalyze	->	1.00
+A4GNT	MUC17	catalyze	->	1.00
+A4GNT	MUC19	catalyze	->	1.00
+A4GNT	MUC2	catalyze	->	1.00
+A4GNT	MUC20	catalyze	->	1.00
+A4GNT	MUC21	catalyze	->	1.00
+A4GNT	MUC3A	catalyze	->	1.00
+A4GNT	MUC3B	catalyze	->	1.00
+A4GNT	MUC4	catalyze	->	1.00
+A4GNT	MUC5AC	catalyze	->	1.00
+A4GNT	MUC5B	catalyze	->	1.00
+A4GNT	MUC6	catalyze	->	1.00
+A4GNT	MUC7	catalyze	->	1.00
+A4GNT	MUCL1	catalyze	->	1.00
+AAAS	AGO2	catalyze	->	1.00
+AAAS	ALYREF	activate; complex	->	1.00
+AAAS	AURKB	catalyze	->	1.00
+AAAS	BANF1	complex; input	-	1.00
+AAAS	BIRC5	catalyze	->	1.00
+AAAS	CASC3	activate; complex	->	1.00
+AAAS	CCNB1	catalyzed by	<-	1.00
+AAAS	CCNB2	catalyzed by	<-	1.00
+AAAS	CDC40	activate	->	1.00
+AAAS	CDCA8	catalyze	->	1.00
+AAAS	CDK1	catalyzed by	<-	1.00
+AAAS	CHTOP	activate	->	1.00
+AAAS	CPSF1	activate	->	1.00
+AAAS	CPSF2	activate	->	1.00
+AAAS	CPSF3	activate	->	1.00
+AAAS	CPSF4	activate	->	1.00
+AAAS	DDX20	activate	->	1.00
+AAAS	DHX38	activate	->	1.00
+AAAS	EIF4A3	activate; complex	->	1.00
+AAAS	EIF4E	activate	->	1.00
+AAAS	FIP1L1	activate	->	1.00
+AAAS	GCK	catalyze	->	1.00
+AAAS	GCKR	catalyze	->	1.00
+AAAS	GEMIN2	activate	->	1.00
+AAAS	GEMIN4	activate	->	1.00
+AAAS	GEMIN5	activate	->	1.00
+AAAS	GEMIN6	activate	->	1.00
+AAAS	GEMIN7	activate	->	1.00
+AAAS	GEMIN8	activate	->	1.00
+AAAS	HIKESHI	catalyze	->	1.00
+AAAS	HMGA1	complex; input	-	1.00
+AAAS	HNRNPC	catalyze	->	1.00
+AAAS	HSPA1B	catalyze	->	1.00
+AAAS	INCENP	catalyze	->	1.00
+AAAS	IPO8	catalyze	->	1.00
+AAAS	ISG15	inhibited by	|-	1.00
+AAAS	KPNA1	activate; catalyze	->	1.00
+AAAS	KPNA2	catalyze	->	1.00
+AAAS	KPNA3	catalyze	->	1.00
+AAAS	KPNA4	catalyze	->	1.00
+AAAS	KPNA5	catalyze	->	1.00
+AAAS	KPNA7	catalyze	->	1.00
+AAAS	KPNB1	activate; catalyze; complex; input	->	1.00
+AAAS	MAGOH	activate; complex	->	1.00
+AAAS	MAGOHB	activate; complex	->	1.00
+AAAS	NCBP1	activate; complex	->	1.00
+AAAS	NCBP2	activate; complex	->	1.00
+AAAS	NDC1	catalyzed by; complex; input	<-	1.00
+AAAS	NEK6	catalyzed by	<-	1.00
+AAAS	NEK9	catalyzed by	<-	1.00
+AAAS	NPM1	complex; input	-	1.00
+AAAS	NUP107	catalyzed by; complex; input	<-	1.00
+AAAS	NUP133	catalyzed by; complex; input	<-	1.00
+AAAS	NUP153	catalyzed by; complex; input	<-	1.00
+AAAS	NUP155	catalyzed by; complex; input	<-	1.00
+AAAS	NUP160	catalyzed by; complex; input	<-	1.00
+AAAS	NUP188	catalyzed by; complex; input	<-	1.00
+AAAS	NUP205	catalyzed by; complex; input	<-	1.00
+AAAS	NUP210	catalyzed by; complex; input	<-	1.00
+AAAS	NUP214	catalyzed by; complex; input	<-	1.00
+AAAS	NUP35	catalyzed by; complex; input	<-	1.00
+AAAS	NUP37	catalyzed by; complex; input	<-	1.00
+AAAS	NUP43	catalyzed by; complex; input	<-	1.00
+AAAS	NUP50	catalyze; complex; input	->	1.00
+AAAS	NUP54	catalyzed by; complex; input	<-	1.00
+AAAS	NUP58	catalyzed by; complex; input	<-	1.00
+AAAS	NUP62	catalyzed by; complex; input	<-	1.00
+AAAS	NUP85	catalyzed by; complex; input	<-	1.00
+AAAS	NUP88	catalyzed by; complex; input	<-	1.00
+AAAS	NUP93	catalyzed by; complex; input	<-	1.00
+AAAS	NUP98	catalyzed by; complex; input	<-	1.00
+AAAS	NUPL2	catalyzed by; complex; input	<-	1.00
+AAAS	NXF1	activate; complex	->	1.00
+AAAS	NXF2	activate; complex	->	1.00
+AAAS	NXT1	activate; complex	->	1.00
+AAAS	PHAX	activate	->	1.00
+AAAS	PIAS3	reaction	-	1.00
+AAAS	PML	catalyze	->	1.00
+AAAS	POLDIP3	activate; complex	->	1.00
+AAAS	POM121	catalyzed by; complex; input	<-	1.00
+AAAS	POM121C	catalyzed by; complex; input	<-	1.00
+AAAS	PSIP1	complex; input	-	1.00
+AAAS	RAE1	catalyzed by; complex; input	<-	1.00
+AAAS	RAN	activate; catalyze; complex; input	->	1.00
+AAAS	RANBP2	catalyzed by; complex; input	<-	1.00
+AAAS	RANGAP1	complex	-	1.00
+AAAS	RBM8A	activate; complex	->	1.00
+AAAS	RNPS1	activate; complex	->	1.00
+AAAS	SARNP	activate	->	1.00
+AAAS	SEH1L	catalyzed by; complex; input	<-	1.00
+AAAS	SLBP	activate	->	1.00
+AAAS	SLU7	activate	->	1.00
+AAAS	SMN1	activate	->	1.00
+AAAS	SNRPB	activate	->	1.00
+AAAS	SNRPD1	activate	->	1.00
+AAAS	SNRPD2	activate	->	1.00
+AAAS	SNRPD3	activate	->	1.00
+AAAS	SNRPE	activate	->	1.00
+AAAS	SNRPF	activate	->	1.00
+AAAS	SNRPG	activate	->	1.00
+AAAS	SNUPN	activate	->	1.00
+AAAS	SP100	catalyze	->	1.00
+AAAS	SRRM1	activate; complex	->	1.00
+AAAS	SRSF1	activate	->	1.00
+AAAS	SRSF11	activate	->	1.00
+AAAS	SRSF2	activate	->	1.00
+AAAS	SRSF3	activate	->	1.00
+AAAS	SRSF4	activate	->	1.00
+AAAS	SRSF5	activate	->	1.00
+AAAS	SRSF6	activate	->	1.00
+AAAS	SRSF7	activate	->	1.00
+AAAS	SRSF9	activate	->	1.00
+AAAS	SUMO1	catalyze; complex	->	1.00
+AAAS	SUMO2	catalyze	->	1.00
+AAAS	SUMO3	catalyze	->	1.00
+AAAS	SYMPK	activate	->	1.00
+AAAS	THOC1	activate	->	1.00
+AAAS	THOC2	activate	->	1.00
+AAAS	THOC3	activate	->	1.00
+AAAS	THOC5	activate	->	1.00
+AAAS	THOC6	activate	->	1.00
+AAAS	THOC7	activate	->	1.00
+AAAS	TOP2A	catalyze	->	1.00
+AAAS	TPR	catalyzed by; complex; input	<-	1.00
+AAAS	U2AF1L4	activate	->	1.00
+AAAS	U2AF1L5	activate	->	1.00
+AAAS	U2AF2	activate	->	1.00
+AAAS	UBE2I	catalyze; complex	->	1.00
+AAAS	UPF3B	activate; complex	->	1.00
+AAAS	WDR33	activate	->	1.00
+AAAS	XPO1	activate; complex; input	->	1.00
+AAAS	XPOT	catalyze	->	1.00
+AAAS	ZC3H11A	activate	->	1.00
+AAG1	CASP1	activated by	<-	1.00
+AAG1	CASP10	activated by	<-	1.00
+AAG1	CASP2	reaction	-	1.00
+AAG1	CASP3	activated by	<-	1.00
+AAG1	CASP4	activated by	<-	1.00
+AAG1	CASP5	activated by	<-	1.00
+AAG1	CASP6	activated by	<-	1.00
+AAG1	CASP7	activated by	<-	1.00
+AAG1	CASPASE-9C	activated by	<-	1.00
+AAG1	EIF1	reaction	-	1.00
+AAG1	EIF2S1	complex; reaction	-	1.00
+AAG1	EIF2S2	complex; input	-	1.00
+AAG1	EIF2S3L	complex; input	-	1.00
+AAG1	EIF3A	complex; input	-	1.00
+AAG1	EIF4A1	PPrel: binding/association; complex; input	-	1.00
+AAG1	EIF4A2	PPrel: binding/association	-	1.00
+AAG1	EIF4E	PPrel: binding/association; complex; input	-	1.00
+AAG1	EIF4E1B	PPrel: binding/association	-	1.00
+AAG1	EIF4E2	PPrel: binding/association	-	1.00
+AAG1	PTBP1	complex; input	-	1.00
+AAGAB	UNC119	predicted	-	0.73
+AAK1	ACTR2	complex; input	-	1.00
+AAK1	ACTR3	complex; input	-	1.00
+AAK1	ADRB2	complex; input	-	1.00
+AAK1	AGFG1	complex; input	-	1.00
+AAK1	AMPH	complex; input	-	1.00
+AAK1	AP2A1	complex; input	-	1.00
+AAK1	AP2A2	complex; input	-	1.00
+AAK1	AP2B1	complex; input	-	1.00
+AAK1	AP2M1	complex; input	-	1.00
+AAK1	AP2S1	complex; input	-	1.00
+AAK1	APOB	complex; input	-	1.00
+AAK1	ARF6	activated by	<-	1.00
+AAK1	ARFGAP1	activated by	<-	1.00
+AAK1	ARPC1A	complex; input	-	1.00
+AAK1	ARPC2	complex; input	-	1.00
+AAK1	ARPC3	complex; input	-	1.00
+AAK1	ARPC4	complex; input	-	1.00
+AAK1	ARPC5	complex; input	-	1.00
+AAK1	ARRB1	complex; input	-	1.00
+AAK1	ARRB2	complex; input	-	1.00
+AAK1	ATP13A2	predicted	-	0.73
+AAK1	AVP	complex; input	-	1.00
+AAK1	AVPR2	complex; input	-	1.00
+AAK1	BIN1	complex; input	-	1.00
+AAK1	CBL	complex; input	-	1.00
+AAK1	CD3D	complex; input	-	1.00
+AAK1	CD3G	complex; input	-	1.00
+AAK1	CD4	complex; input	-	1.00
+AAK1	CFTR	complex; input	-	1.00
+AAK1	CHRM2	complex; input	-	1.00
+AAK1	CLTA	complex; input	-	1.00
+AAK1	CLTB	complex; input	-	1.00
+AAK1	CLTC	complex; input	-	1.00
+AAK1	CLTCL1	complex; input	-	1.00
+AAK1	CTTN	complex; input	-	1.00
+AAK1	DAB2	complex; input	-	1.00
+AAK1	DNAJC6	complex; input	-	1.00
+AAK1	DNM2	complex; input	-	1.00
+AAK1	DVL2	complex; input	-	1.00
+AAK1	EGF	complex; input	-	1.00
+AAK1	EGFR	complex; input	-	1.00
+AAK1	EPN1	complex; inhibited by; input	|-	1.00
+AAK1	EPN2	complex; inhibited by; input	|-	1.00
+AAK1	EPS15	complex; inhibited by; input	|-	1.00
+AAK1	EPS15L1	complex; input	-	1.00
+AAK1	FCHO1	complex; input	-	1.00
+AAK1	FCHO2	complex; input	-	1.00
+AAK1	FNBP1	complex; input	-	1.00
+AAK1	FNBP1L	complex; input	-	1.00
+AAK1	FZD4	complex; input	-	1.00
+AAK1	GAK	complex; input	-	1.00
+AAK1	GAPVD1	complex; input	-	1.00
+AAK1	GRB2	complex; input	-	1.00
+AAK1	HGS	complex; input	-	1.00
+AAK1	HIP1	complex; input	-	1.00
+AAK1	HIP1R	complex; input	-	1.00
+AAK1	HSPA8	complex; input	-	1.00
+AAK1	IGF2R	complex; input	-	1.00
+AAK1	ITSN1	complex; input	-	1.00
+AAK1	KIAA0319	complex; input	-	1.00
+AAK1	LDLR	complex; input	-	1.00
+AAK1	LDLRAP1	complex; input	-	1.00
+AAK1	LRP2	complex; input	-	1.00
+AAK1	M6PR	complex; input	-	1.00
+AAK1	NECAP1	complex; input	-	1.00
+AAK1	OCRL	complex; input	-	1.00
+AAK1	PACSIN2	complex; input	-	1.00
+AAK1	PICALM	complex; input	-	1.00
+AAK1	PIK3C2A	complex; input	-	1.00
+AAK1	RAB5A	complex; input	-	1.00
+AAK1	REPS1	complex; input	-	1.00
+AAK1	REPS2	complex; input	-	1.00
+AAK1	RPS27A	complex; input	-	1.00
+AAK1	SCARB2	complex; input	-	1.00
+AAK1	SGIP1	complex; input	-	1.00
+AAK1	SH3GL2	complex; input	-	1.00
+AAK1	SH3KBP1	complex; input	-	1.00
+AAK1	SLC18A3	complex; input	-	1.00
+AAK1	SLC2A8	complex; input	-	1.00
+AAK1	SNX9	complex; input	-	1.00
+AAK1	STAM	complex; input	-	1.00
+AAK1	STAM2	complex; input	-	1.00
+AAK1	STON2	complex; input	-	1.00
+AAK1	SYNJ1	complex; input	-	1.00
+AAK1	SYNJ2	complex; input	-	1.00
+AAK1	SYT1	complex; input	-	1.00
+AAK1	SYT2	complex; input	-	1.00
+AAK1	SYT9	complex; input	-	1.00
+AAK1	TF	complex; input	-	1.00
+AAK1	TFRC	complex; input	-	1.00
+AAK1	TGOLN2	complex; input	-	1.00
+AAK1	TRIP10	complex; input	-	1.00
+AAK1	UBA52	complex; input	-	1.00
+AAK1	UBB	complex; input	-	1.00
+AAK1	UBC	complex; input	-	1.00
+AAK1	UBQLN2	inhibited by	|-	1.00
+AAK1	VAMP2	complex; input	-	1.00
+AAK1	VAMP3	complex; input	-	1.00
+AAK1	VAMP4	complex; input	-	1.00
+AAK1	VAMP7	complex; input	-	1.00
+AAK1	VAMP8	complex; input	-	1.00
+AAK1	WASL	complex; input	-	1.00
+AAK1	WNT5A	complex; input	-	1.00
+AAMDC	BAG3	predicted	-	0.73
+AAMDC	EGFR	predicted	-	0.73
+AAMDC	UBC	predicted	-	0.73

@@ -1,0 +1,17 @@
+Hashing ist die Umwandlung einer Zeichenkette s in einen kürzeren Wert fester Länge oder Schlüssel, der die ursprüngliche Zeichenfolge darstellt. Hashing wird zum Indizieren und Abrufen von Elementen in einer Datenbank, weil es schneller ist, das Element mit dem kürzeren Hash-Schlüssel zu finden, als es zu finden unter Verwendung des Originalwertes. Beim Hashing wird versucht, eine gleichmäßige Verteilung der Daten auf die Klassen zu finden.
+Binning ist eine Möglichkeit, eine Anzahl kontinuierlicher Werte in eine kleinere Anzahl von Kategorien ("Mülleimer"). Binning kann auch als Diskretisierung eines kontinuierlichen Prozesses beschrieben werden. Wert. Das Binning von Werten führt oft zu einer Sortierung der Daten.
+
+Warum ist das Binning Hashing, aber nicht jedes Hashing ein Binning?
+
+Das Binning kann als eine Form des Hashings betrachtet werden, da es Werte in kleinere Werte (Schlüssel) umwandelt. als das Original. Hashing kann nicht immer als Binning angesehen werden, da die Raute-Tasten nicht müssen kontinuierlich sein, wie im Falle des Binning. Hashing kann auch nicht immer als als Binning, da es im Gegensatz zum Hashing die Daten nicht in kategorisierte Bins sortiert.
+
+Vorteile des Hashings:
+
+1. Zuverlässige Methode für Data Retrieval.
+2. Die Verwendung von Hashes in festen Datenstrukturen ist viel schneller als die Suche in Arrays und Listen. Datenstrukturen können in O(1)-Zeit durchsucht werden, wenn wir eine Hash-Funktion ohne Kollisionen annehmen.
+
+Vorteile des Binnings:
+
+1. Wenn die Daten in prädiktiven Modellen verwendet werden, kann das Binning die Modelle verbessern, da es das Rauschen reduziert.
+2. Binning ermöglicht die einfache Identifizierung von Ausreißern und ungültigen numerischen Variablen.
+
