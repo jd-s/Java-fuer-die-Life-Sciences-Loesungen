@@ -1,0 +1,60 @@
+import java.io.File;
+import java.util.ArrayList;
+import java.util.Collections;
+
+
+public class ParticleB {
+	public static void main(String args[]) {
+		String folder = (String) (args.length > 0 ? args[0] : null);
+		
+		if (folder==null){
+			System.out.print("Please put all the information ");
+		}
+		else {
+			ArrayList<Integer>nr_cells =cells(folder);
+			int pairs=nr_cells .size();
+			int min=Collections.min(nr_cells);
+			int max=Collections.max(nr_cells);
+			float sum = 0;
+			for(int i = 0; i < nr_cells.size(); i++) {
+				sum += nr_cells.get(i);
+			}
+			float avg=sum/nr_cells.size();
+			System.out.println("The total number of pairs is "+pairs);
+			System.out.println("The minimum number of cells is "+min);
+			System.out.println("The maximum number of cells is "+max);
+			System.out.println("The average number of cells (the mean) is "+avg);
+
+		}
+
+		}
+	
+
+
+		public static ArrayList<Integer> cells(String folder){
+			ArrayList <String> images=new ArrayList<String>();
+			ArrayList <Integer> counts=new ArrayList<Integer>();
+			File read = new File(folder);
+			File[] listOfFiles = read.listFiles();
+			for (int i = 0; i < listOfFiles.length; i++) {
+				images.add(listOfFiles[i].getName());
+
+			}
+			for (int i=0;i<images.size();i+=2) {
+				
+				
+				int c1 = CellCounter.cellC(folder+"/"+images.get(i));
+				int c2 = CellCounter.cellC(folder+"/"+images.get(i+1));
+				int total=c1+c2;
+				System.out.println("The total number of cells in pair is :"+total);				
+				counts.add(total);
+
+			}
+			return counts;
+
+
+		}
+
+
+	}
+

@@ -1,0 +1,37 @@
+import ij.IJ;
+import ij.ImagePlus;
+import ij.Prefs;
+import ij.measure.ResultsTable;
+import ij.process.ImageConverter;
+
+public class CellCounter{
+
+	public static ImagePlus Importer(String importPath) {
+		ImagePlus importImage = new ImagePlus(importPath);
+		return importImage;
+	}
+
+	public static int cellC(String path) {
+
+		ImagePlus imgPlus=  Importer(path);
+
+		ImageConverter ic = new ImageConverter(imgPlus);
+		ic.convertToGray8();
+		imgPlus.updateImage();
+
+
+		IJ.setAutoThreshold(imgPlus , "MaxEntropy");
+		IJ.run(imgPlus , "Convert to Mask", "Black Background");
+		Prefs.blackBackground = true;
+		IJ.run(imgPlus , "Watershed", "only");
+
+		IJ.run(imgPlus, "Analyze Particles...", "size=0-Infinity"
+				+ "circularity=0.00-1.00 show=Nothing");
+
+
+		ResultsTable rt =ResultsTable.getResultsTable();
+		int counter=rt.getCounter();
+		return counter;
+	}
+}
+

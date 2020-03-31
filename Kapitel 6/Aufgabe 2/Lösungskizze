@@ -1,0 +1,61 @@
+import ij.IJ;
+import ij.ImagePlus;
+import ij.Prefs;
+import ij.measure.ResultsTable;
+import ij.plugin.filter.ParticleAnalyzer;
+import ij.process.ImageConverter;
+
+public class ParticleA {
+
+	public static ImagePlus Importer(String importPath) {
+		ImagePlus importImage = new ImagePlus(importPath);
+		return importImage;
+	}
+
+	public static void main(String args[]) {
+		String path1 = (String) (args.length > 0 ? args[0] : null);
+		String path2 = (String) (args.length > 1 ? args[1] : null);
+		if ((path1==null) || (path2==null)) {
+			System.out.print("Double check the names! Then try again");}
+
+		else {
+			if ((path1.equals("--dna")&& (path2.equals("--actin")))) {
+				String p1 = "Drosophila/A9_20p10d.png" ;
+				int c1= cellC(p1);
+				System.out.println("This dna image has "+c1+" cells");
+				String p2 = "Drosophila/A9_20p10f.png";
+				int c2=cellC(p2);
+				System.out.println("This actin image has "+c2+" cells");
+				System.out.println("The number of cells in total is  " +(c1+c2));
+
+			}
+
+		}	
+
+
+	}
+	public static int cellC(String path) {
+
+		ImagePlus imgPlus=  Importer(path);
+
+		ImageConverter ic = new ImageConverter(imgPlus);
+		ic.convertToGray8();
+		imgPlus.updateImage();
+
+
+		IJ.setAutoThreshold(imgPlus , "MaxEntropy");
+		IJ.run(imgPlus , "Convert to Mask", "Black Background");
+		Prefs.blackBackground = true;
+		IJ.run(imgPlus , "Watershed", "only");
+
+		IJ.run(imgPlus, "Analyze Particles...", "size=0-Infinity"
+				+ "circularity=0.00-1.00 show=Nothing");
+
+
+		ResultsTable rt =ResultsTable.getResultsTable();
+		int counter=rt.getCounter();
+		//System.out.println(""+ResultsTable.getResultsTable());
+		return counter;
+	}
+}
+

@@ -1,0 +1,51 @@
+== Resize ==
+
+float xSize = image.getWidth()*(size);
+float ySize = image.getHeight()*(size);
+
+ImageProcessor ip = image.getProcessor();
+ImageProcessor resizeIp = ip.resize((int) Math.round(xSize), (int) Math.round(ySize));
+image.setProcessor(resizeIp);
+
+
+== Export als PNG ==
+
+FileSaver png = new FileSaver(exportImage);
+saveMessage = png.saveAsPng(path);
+
+== Aufgabenteil 2 ==
+
+public void Proceed(String type1, String path1, String type2, String path2) {
+		
+	ImageDroso Droso = new ImageDroso();
+
+	ImagePlus image1 = Droso.Importer(path1);
+	ImageConverter ic1 = new ImageConverter(image1);
+
+	ic1.convertToGray8();
+	image1.updateImage();
+
+
+	ImagePlus image2 = Droso.Importer(path2);
+	ImageConverter ic2 = new ImageConverter(image2);
+
+	ic2.convertToGray8();
+	image2.updateImage();
+
+	ImagePlus[] images = {null, null, image2, null, null, null, image1};
+
+	ImagePlus merge = RGBStackMerge.mergeChannels(images, false);
+
+	IJ.run(merge, "Enhance Contrast", "saturated=0.95");
+
+	ImageConverter m = new ImageConverter(merge);
+
+	m.convertToRGB();		
+
+	merge.updateImage();
+
+	merge.show();
+
+	Droso.ExporterTiff(merge, "dualchannels.tiff");
+}
+

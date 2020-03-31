@@ -1,71 +1,126 @@
-package de.bit.pl2.ex10;
+package de.bit.pl2.ex07;
 
-import org.apache.commons.cli.*;
+import java.util.HashSet;
+import java.util.Set;
+//import org.jgrapht.DirectedGraph; // not working with latest JGrapht version (version1.3.0)
+import org.jgrapht.graph.DefaultDirectedGraph;
+import org.jgrapht.graph.DefaultEdge;
+import org.jgrapht.alg.interfaces.ShortestPathAlgorithm.SingleSourcePaths;
+import org.jgrapht.alg.shortestpath.DijkstraShortestPath;
 
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.PrintWriter;
-import java.util.List;
+public class App
+{
+	private static Set<String> getBaseNodesAsSet(DefaultDirectedGraph<String, DefaultEdge> graph) 
+	{
+		Set<String> base = new HashSet<String>();
+		for (String vertex : graph.vertexSet()) 
+		{
+			if (graph.inDegreeOf(vertex) == 0) 
+			{
+				base.add(vertex);
+			}
+		}
+		return base;
+	}
 
-public class App {
-    public static void main(String[] args) {
+	private static Set<String> getTopNodesAsSet(DefaultDirectedGraph<String, DefaultEdge> graph)
+	{
+		Set<String> top = new HashSet<String>();
+		for (String vertex : graph.vertexSet())
+		{
+			if (graph.outDegreeOf(vertex) == 0) 
+			{
+				top.add(vertex);
+			}
+		}
+		return top;
+	}
 
-        Options options = new Options();
-        Option pmidlist = new Option("l", "pmidlist", true, "List of pmids");
-        Option outputpath = new Option("e", "outputpath", true, "filepath to which " +
-                "classifications should be written");
+	private static int heightOfNode(DefaultDirectedGraph<String, DefaultEdge> graph, String node)
+	{
+		Set<String> baseNodes = getBaseNodesAsSet(graph);
+		DijkstraShortestPath<String, DefaultEdge> dijkstra = new DijkstraShortestPath<>(graph);
+		// Initialize height with the largest possible value
+		int height = Integer.MAX_VALUE;
+		for (String i : baseNodes)
+		{
+			SingleSourcePaths<String, DefaultEdge> paths = dijkstra.getPaths(i);
+			if (paths.getPath(node) != null) 
+			{
+				if (paths.getPath(node).getLength() < height)
+				{
+					height = paths.getPath(node).getLength();
+				}
+			}
+		}
+		return height;
+	}
 
-        options.addOption(pmidlist);
-        options.addOption(outputpath);
+	public static void main(String[] args) 
+	{
+		DefaultDirectedGraph<String, DefaultEdge> foodGraph = new DefaultDirectedGraph<String, DefaultEdge>(DefaultEdge.class);
 
-        CommandLineParser parser = new DefaultParser();
-        HelpFormatter formatter = new HelpFormatter();
-        CommandLine cmdLine;
+		foodGraph.addVertex("Zooplankton");
+		foodGraph.addVertex("Phytoplankton");
+		foodGraph.addVertex("Submerged Aquatic Vegetation (SAV)");
+		foodGraph.addVertex("Vegetation");
 
-        try {
-            cmdLine = parser.parse(options, args);
+		foodGraph.addVertex("Benthic Invertebrates");
+		foodGraph.addVertex("Herbivorous Ducks");
+		foodGraph.addVertex("Geese and Mute Swans");
 
-        } catch (ParseException e) {
-            System.out.println(e.getMessage());
-            formatter.printHelp("Classify each in a list of pmids, providing the following arguments:", options);
-            System.exit(1);
-            return;
-        }
+		foodGraph.addVertex("Small Planktivorous Fish");
+		foodGraph.addVertex("Bivalves");
+		foodGraph.addVertex("Tundra Swan");
 
+		foodGraph.addVertex("Large Piscivorous Fish");
+		foodGraph.addVertex("Sea Ducks");
 
-        if (cmdLine.hasOption("l") && cmdLine.hasOption("e")) {
-            String pmidlist1 = cmdLine.getOptionValue("pmidlist");
-            String outputpath1 = cmdLine.getOptionValue("outputpath");
+		foodGraph.addVertex("Gulls and Terns");
+		foodGraph.addVertex("Wading Birds");
+		foodGraph.addVertex("Bald Eagle");
+		foodGraph.addVertex("Osprey");
 
+		foodGraph.addEdge("Phytoplankton", "Benthic Invertebrates");
+		foodGraph.addEdge("Phytoplankton", "Bivalves");
+		foodGraph.addEdge("Phytoplankton", "Small Planktivorous Fish");
 
-            // get list of pmids from file
-            FileParser fileParser = new FileParser();
-            List<Integer> pmids = fileParser.parseFile(new File(pmidlist1));
+		foodGraph.addEdge("Bivalves", "Sea Ducks");
+		foodGraph.addEdge("Bivalves", "Herbivorous Ducks");
+		foodGraph.addEdge("Bivalves", "Tundra Swan");
 
-            // read jsons into list of documents
-            JsonReader jsonReader = new JsonReader();
-            List<Document> docs = jsonReader.readAllJsons(pmids);
+		foodGraph.addEdge("Vegetation", "Tundra Swan");
+		foodGraph.addEdge("Vegetation", "Geese and Mute Swans");
 
-            // bin each document and write result into file
-            PrintWriter printWriter = null;
-            try {
-                printWriter = new PrintWriter(new File(String.valueOf(outputpath1)));
-            } catch (FileNotFoundException e) {
-                e.printStackTrace();
-            }
-            // Print header
-            printWriter.println("PMID, Classification");
-            for (Document doc : docs) {
-                printWriter.println(doc.getPmid() + "," + Document.bin(doc));
-            }
-            // Force the PrintWriter to actually write to the file now before we quit the app
-            printWriter.flush();
+		foodGraph.addEdge("Zooplankton", "Small Planktivorous Fish");
+		foodGraph.addEdge("Zooplankton", "Bivalves");
 
+		foodGraph.addEdge("Small Planktivorous Fish", "Wading Birds");
+		foodGraph.addEdge("Small Planktivorous Fish", "Large Piscivorous Fish");
+		foodGraph.addEdge("Small Planktivorous Fish", "Gulls and Terns");
 
-        } else {
-            formatter.printHelp("Classify pmids:", options);
-            System.exit(1);
-        }
+		foodGraph.addEdge("Large Piscivorous Fish", "Osprey");
+		foodGraph.addEdge("Large Piscivorous Fish", "Bald Eagle");
 
-    }
+		foodGraph.addEdge("Submerged Aquatic Vegetation (SAV)", "Herbivorous Ducks");
+		foodGraph.addEdge("Benthic Invertebrates", "Sea Ducks");
+		foodGraph.addEdge("Sea Ducks", "Bald Eagle");
+
+		Set<String> foodChainBaseNodes = getBaseNodesAsSet(foodGraph);
+		System.out.println("Base of the food chain organisms: " + foodChainBaseNodes.toString());
+
+		System.out.println();
+
+		Set<String> foodChainTopNodes = getTopNodesAsSet(foodGraph);
+		System.out.println("Apex predators: " + foodChainTopNodes.toString());
+		System.out.println();
+
+		System.out.println("The height of the node, 'Bald eagle' is: " + heightOfNode(foodGraph, "Bald Eagle"));
+		System.out.println();
+
+		for (String node : foodGraph.vertexSet()) 
+		{
+			System.out.println(node + " height = " + heightOfNode(foodGraph, node));
+		}
+	}
 }
