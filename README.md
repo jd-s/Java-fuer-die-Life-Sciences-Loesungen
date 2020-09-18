@@ -2,9 +2,7 @@
 
 Dieses Repository bietet Lösungen, Lösungsvorschläge und Lösungsanregungen zu den Übungsaufgaben des Buches. Außerdem werden hier die Dateien zu den Übungen bereitgestellt.
 
-Anmerkungen:
-* Anmerkungen, andere Vorschläge und Verbesserungen können gerne jederzeit eingestellt werden. 
-*
+Anmerkungen, andere Vorschläge und Verbesserungen können gerne jederzeit eingestellt werden. 
 
 ---
 
